@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코딩네컷</title>
+    <style>
+        @font-face {
+            font-family: "LeeSeoyun";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+
+        .container {
+            width: 390px;
+            background-color: #ff99af;
+            height: 100%;
+        }
+
+        .f-date {
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .photos {
+            margin-top: 30px;
+        }
+
+        .photo-frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 200px;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            font-size: 25px;
+            font-weight: 900;
+            color: white;
+        }
+
+        #image1 {
+            background: url(./7952B39C-901D-4EAD-AB23-FF0702778D08.jpeg)no-repeat center;
+            background-size: cover;
+        }
+
+        #image2 {
+            background-image: url(./8C663953-0978-4C64-AFB4-C98EFC0A188B.jpeg);
+        }
+
+        #image3 {
+            background-image: url(./3472483075852902736_20230301134959771.png);
+            background-position: bottom 45% center;
+        }
+
+        #image4 {
+            background-image: url(./IMG_8778.png);
+            background-position: bottom 60% center;
+        }
+
+        .photo_description {
+            color: #fff;
+            background-color: #000;
+            width: 250px;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .photo-frame:hover .photo_description {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 여기에 주요 코드가 들어갈거에요! -->
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    우리 이미지 사진 처음 찍은 날!
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                    대천에서 먹은 대하+맥주 잊지 못태..
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                    여수 밤~ 바다 ~
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                    바다랑 함께 경주 여행 :)
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">윤당이와 함께라면 행복하니끄 🥰</p>
+            <p class="f-date">2023.03.01</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
